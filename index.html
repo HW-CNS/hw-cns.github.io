@@ -2,20 +2,88 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Web Page Design by James Koster - http://www.jameskoster.co.uk -->
-
-
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Handwriting team - CNS Lab</title>
 <link href="css/1.css" rel="stylesheet" type="text/css" />
 </head>
+<style>
+	* {box-sizing: border-box;}
+	body {font-family: Verdana, sans-serif;}
+	.mySlides {display: none;}
+	img {vertical-align: middle;}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+	
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+	
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.active {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+</style>
 
 <body>
 <a name="top" id="top"></a>
 <center>
 		<div id="menu">
-				<a href="#top">CNS lab</a>
+				<a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/home.html">CNS lab Home</a>
 				<a href="#top">Home</a>
 				<a href="#css">Research</a>
 				<a href="#about">Publications</a>
@@ -31,7 +99,64 @@
 			<h2>We work on problems related to handwriting</h2>
 		</div>
 		<br></br><br></br>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="image/cover1.jpg" style="width:70%; height: 7%;">
+			  <div class="text">Caption Text</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="image/cover2.jpg" style="width:70%; height: 7%;">
+			  <div class="text">Caption Two</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="image/cover3.jpg" style="width:70%; height: 7%;">
+			  <div class="text">Caption Three</div>
+			</div>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+			
+			<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 4000); // Change image every 4 seconds
+			}
+			</script>
+
 		<div id="content">
+				<h1>Recent News</h1>
+					<li>First CNSL Virtual Meet 2020 held on 15-16 August 2020.
+						Click <a href="https://sites.google.com/view/cnsl-2020/home">here</a> for more details</li>
+					<li>Gubbala Roshan (ee16b138) and Sai Charan (ee16b137) joined the team to do their Dual Degree Project (DDP)</li>
+				<br></br>
+
 				<h1>Recent Tweets</h1>
 					<a class="twitter-timeline" data-width="270" data-height="500" data-theme="light" href="https://twitter.com/bharatiscript?ref_src=twsrc%5Etfw">Tweets by bharatiscript</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 					<a class="twitter-timeline" data-width="270" data-height="500" data-theme="light" href="https://twitter.com/cnslabiitm?ref_src=twsrc%5Etfw">Tweets by cnslabiitm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
