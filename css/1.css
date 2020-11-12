@@ -71,7 +71,7 @@ li {
 }
 #menu a:hover {
 	border-bottom:1px solid #ffffff;
-	border-left:1px solid #728d40;
+	border-left:1px solid rgb(111, 112, 109);
 	border-right:1px solid #e9ffb7;
 	padding-left:9px;
 	padding-right:9px;
@@ -117,7 +117,7 @@ li {
 	font-family:Helvetica, Arial, sans-serif;
 	line-height:20px;
 	font-size:12px;
-	color::rgb(111, 112, 109);
+	color:rgb(111, 112, 109);
 	text-indent:25px;
 	background-image:url(../images/backgrounds/desc.jpg);
 	background-position:bottom left;
@@ -150,7 +150,7 @@ li {
 	text-transform:uppercase;
 	font-weight:normal;
 	border-bottom:1px solid #eeeeee;
-	color:#728c40;
+	color:rgb(111, 112, 109);
 	text-align:right;
 }
 .submenu {
@@ -183,7 +183,7 @@ li {
 	text-transform:uppercase;
 	font-weight:normal;
 	border-bottom:1px solid #eeeeee;
-	color:#728c40;
+	color:rgb(111, 112, 109);
 }
 
 #mainbar p {
