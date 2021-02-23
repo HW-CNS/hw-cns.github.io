@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us - R&W Team</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            
+            .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(139, 135, 135);
+            }
+            .active {
+            background-color: rgb(206, 41, 29);
+            }
+            li {
+            float: left;
+            }
+            
+            li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            
+            li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(206, 41, 29);
+            }
+            
+            li.dropdown {
+            display: inline-block;
+            }
+            
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(139, 135, 135);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgb(230, 223, 223);
+            z-index: 1;
+            }
+            
+            .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+            
+            .dropdown-content a:hover {background-color: rgb(206, 41, 29);}
+            
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+            * {
+            padding:0;
+            margin:0;
+            }
+            .iconDetails {
+                margin:0 2%;
+                float:left;
+                width:10%;
+                height:90px;
+            }
+            .container2 {
+                width:100%;
+                height:auto;
+                padding:1%;
+            }
+            .text {
+                float:left;
+            }
+            .text h4, .text p {
+                width:100%;
+                float:left;
+                font-size:0.9em;
+                color: rgb(80, 76, 76);
+            }
+            .text h1 {
+                width:100%;
+                float:left;
+                font-size:2em;
+                color: rgb(80, 76, 76);
+
+            }
+        </style>
+    </head>
+
+    <body style="background-color:burlywood; margin: 1em;">
+        <img src="image/contact_cover.jpg" alt="alt text" width="100%" height="270px" />
+        <ul>
+            <li><a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/home.html">CNS Home</a></li>
+            <li><a href="new_home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Research</a>
+                <div class="dropdown-content">
+                <a href="#">What we work?</a>
+                <a href="#">Publications</a>
+                <a href="#">Softwares</a>
+                </div>
+            </li>
+            <li><a href="people.html">People</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Useful links</a>
+                <div class="dropdown-content">
+                <a href="#">Bharati Script</a>
+                <a href="#">Blogs</a>
+                <a href="#">Presentations</a>
+                <a href="#">Neuroscience</a>
+                <a href="#">Programming</a>
+        
+                </div>
+            </li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a class="active" href="contact.html">Contact us</a></li>
+            </ul>
+
+        <br></br>
+            <h1>Contact us</h1>
+            <br></br>
+            <h2>Lab Head</h2>
+            <b>Prof. V. Srinivasa Chakravarthy</b>, <br>
+            Computational Neuroscience Lab, <br>
+            505, Department of Biotechnology, <br>Block-1,
+            Bhupat and Jyoti Mehta School of Biosciences, <br>
+            Indian Institute of Technology Madras, <br>
+            Chennai 600036, Tamil Nadu, India <br><br>
+            Tel: <a href="tel:(+91)-44-2257-4115">(+91)-44-2257-4115</a><br>
+            Email: <a href="mailto:schakra@iitm.ac.in">schakra[AT]iitm[DOT]ac[DOT]in</a><br>
+            <br></br>
+
+            <h2>Lab</h2>
+            Computational Neuroscience Lab,<br>
+            510-511, Department of Biotechnology, <br> Block-1
+            Bhupat and Jyoti Mehta School of Biosciences <br>
+            Indian Institute of Technology Madras<br>
+            Chennai 600036, Tamil Nadu, India<br><br>
+            Ph: <a href="tel:(+91)-44-22575125">(+91)-44-22575125</a><br>
+            Team mail: <a href="mailto:handwritingteam@gmail.com">handwritingteam[AT]gmail[DOT]com</a> <br><br><br>
+            <style> 
+                #map { 
+                height: 400px; 
+                width: 100%; 
+                } 
+            </style> 
+
+            <div id="googleMap" ></div>
+            <div id="map"></div>
+
+            <script> 
+            function initMap() {
+                var test= {lat: 12.989373, lng: 80.227624}; 
+                var map = new google.maps.Map(document.getElementById('map'), { 
+                zoom: 20, 
+                center: test 
+                }); 
+                var marker = new google.maps.Marker({ 
+                position: test, 
+                map: map 
+                }); 
+            } 
+            </script> 
+            <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+            </script>
+
+        <br></br>
+        <br></br>
+
+    <div id="footer" style="background-color: rgb(139, 135, 135);">
+        <center>
+            Page made with <img src="image/love.png" width="15px" height="15px" alt="love"> by R&W team @ CNS lab
+        </center>
+    </div>
+
+    </body>
+
+</html>
