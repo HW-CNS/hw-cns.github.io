@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>People - R&W Team</title>
+        <title>Research - R&W Team</title>
         <link rel="shortcut icon" type="image/jpg" href="image/new_logo.png"/>
 
         <style>
@@ -9,10 +9,17 @@
             box-sizing: border-box;
             }
             
-            .column {
+            .column1 {
             float: left;
-            width: 33.33%;
+            width: 20%;
             padding: 5px;
+            }
+            .column2 {
+            float: right;
+            width: 70%;
+            padding: 5px;
+            margin-right: 10%;
+
             }
             
             /* Clearfix (clear floats) */
@@ -108,20 +115,20 @@
         </style>
     </head>
 
-    <body style="background-color:blanchedalmond;">
-        <img src="image/people/cover.jpg" alt="alt text" width="100%" height="270px" />
+    <body style="background-color:antiquewhite; margin: 1em;">
+        <img src="image/research/cover.jpg" alt="alt text" width="100%" height="270px" />
         <ul>
             <li><a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/home.html">CNS Home</a></li>
             <li><a href="new_home.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Research</a>
+                <a class="active" href="javascript:void(0)" class="dropbtn">Research</a>
                 <div class="dropdown-content">
-                    <a href="research.html#whatwework">What we work?</a>
-                    <a href="research.html#publications">Publications</a>
-                    <a href="research.html#softwares">Softwares</a>
+                <a href="research.html#whatwework">What we work?</a>
+                <a href="research.html#publications">Publications</a>
+                <a href="research.html#softwares">Softwares</a>
                 </div>
             </li>
-            <li><a class="active" href="people.html">People</a></li>
+            <li><a href="people.html">People</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Useful links</a>
                 <div class="dropdown-content">
@@ -134,82 +141,90 @@
             </li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact.html">Contact us</a></li>
-            </ul>
-
+        </ul>
         <br></br>
-        <h1>People - R&W Team</h1>
+        <h1>Research</h1>
+        <br></br>
+        <a id="whawework" name="whatwework"><h2>What we work?</h2></a>
         <br></br>
         
-        <center>
-            
-            <h2>Principal Investigator</h2>
-            </br>
-            <div class="row">
-              <img src="image/people/Prof-VSC.jpg" width="30%" height="30%">
-              <br></br>
-              <a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/VSC.html" style="color: black;"><b>PROF. V. SRINIVASA CHAKRAVARTHY</b></a>
+        <div class="row">
+            <div class="column1">
+                <img src="image/research/tam_tel.jpg" width=100%/>
             </div>
+            <div class="column2">
+                - Create, collect and augment Telugu and Tamil printed & handwritten data
+                <br></br>
+                - Text detection and preprocessing
+                <br></br>
+                - Word level OCR and handwriting recognition for Telugu and Tamil using Deep Learning models
+                <br></br>
+                - Accurate enough to fairly work on unclean real samples
+            </div>
+        </div>
+        <hr></hr>
+
+        <div class="row">
             <br></br>
+            <div class="column1">
+                <img src="image/research/form.png" width=80% height=100%/>
+            </div>
+            <div class="column2">
+                - Overcome the problem of insufficient amount of usable forms for training
+                <br></br>
+                - Attention mechanism to search and extract information from key fields
+                <br></br>
+                - Non Template-specific processing
+                <br></br>
+                - Reliable to deploy for practical uses
+            </div>
+        </div>
+        <hr></hr>
 
-            <h2>Team Members</h2>
-
-            <div class="row">
-            
-                <div class="column">
-                  <img src="image/people/vicky.jpg" alt="Vignesh" style="width:60%"  height="250px">
-                  <br></br>
-                  <a href="mailto:vigneswaran0610@gmail.com" style="color: black;"><b>Vigneswaran C</b></a>
-                </div>
-            
-                <div class="column">
-                  <img src="image/people/roshan.jpg" alt="Roshan" style="width:60%" height="250px">
-                  <br></br>
-                  <a href="mailto:ee16b138@smail.iitm.ac.in" style="color: black;"><b>Gubbala Roshan</b></a> 
-                </div>
-            
-                <div class="column">
-                    <img src="image/people/charan.jpg" alt="Charan" style="width:60%" height="250px">
-                    <br></br>
-                    <a href="mailto:ee16b137@ee.iitm.ac.in" style="color: black;"><b>Sai Charan</b></a> 
-                </div>
-              
-              </div> 
-
-              <br></br>
-              <br></br>
-
-            <div class="row">
-            
-                <div class="column">
-                    <img src="image/people/varun.jpg" alt="Varun" style="width:60%" height="250px">
-                    <br></br>
-                    <a href="mailto:ee16b159@smail.iitm.ac.in" style="color: black;"><b>Sai Varun</b></a> 
-                </div>
-            
-                <div class="column">
-                    <img src="image/people/hareesh.jpg" alt="Hareesh" style="width:60%" height="250px">
-                    <br></br>
-                    <a href="mailto:hareesh.lucky@gmail.com" style="color: black;"><b>Hareesh Devarakonda</b></a> 
-                </div>    
-            </div>            
-        </center>
-
-        <br></br>
-
-        <h2>Former Members</h2>
-            </br>
-            <a href="mailto:pranavguruprasad0@gmail.com" style="color: black; margin:1em;"><b>Pranav Guruprasad</b></a>
+        <div class="row">
             <br></br>
-            <a href="mailto:sujeeth.kmr144@gmail.com" style="color: black; margin:1em;"><b>Sujith Kumar</b></a>
+            <div class="column1">
+                <img src="image/research/english.jpg" width=80% height=100%/>
+            </div>
+            <div class="column2">
+                - Handwriting recognition for English words
+                <br></br>
+                - Text detection from challenging and varied manuscripts
+                <br></br>
+                - Work accurately on both standard samples (like IAM dataset) as well as difficult examples (like CVPR dataset)
+            </div>
+        </div>
+        <hr></hr>
 
+        <div class="row">
+            <br></br>
+            <div class="column1">
+                <img src="image/research/dyslexia.jpg" width=80% height=80%/>
+            </div>
+            <div class="column2">
+                - Create applications to improve learning process among dyslexic children
+                <br></br>
+                - Understand causes and develop solutions using similarities between
+                the learning process of artificial neural networks and children
+            </div>
+        </div>
+        <hr></hr>
         <br></br>
+        <a id="publications" name="publications"><h2>Publications</h2></a>
+        </br>
+        Pranav Guruprasad, Sujith Kumar S, Vigneswaran C, V. Srinivasa Chakravarthy. An end-to-end, 
+        interactive Deep Learning based Annotation system for cursive and print English handwritten text". ICDSMLA-2020
+        
         <br></br>
+        <a id="softwares" name="softwares"><h2>Softwares</h2></a>
+        </br>
+        Click <a href="softwares.html">here</a> to see publicly available softwares
 
-    <div id="footer" style="background-color: rgb(139, 135, 135);">
-        <center>
+        <div id="footer" style="background-color: rgb(139, 135, 135); margin-top: 10%; margin-bottom: 1%;">
+            <center>
             Page made with <img src="image/love.png" width="15px" height="15px" alt="love"> by R&W team @ CNS lab
-        </center>
-    </div>
+            </center>
+        </div>
 
     </body>
 
