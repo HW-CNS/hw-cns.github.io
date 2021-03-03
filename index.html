@@ -10,13 +10,13 @@
 
       /* Create two equal columns that floats next to each other */
       .column {
+          margin-top: auto;
           float: left;
           width: 50%;
           padding: 10px;
-          height: 300px; /* Should be removed. Only for demonstration */
+          height: 50%
           }
 
-      /* Clear floats after the columns */
       .row:after {
           content: "";
           display: table;
@@ -118,11 +118,11 @@
           color: rgb(80, 76, 76);
       }
       .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
-}
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 2.5rem;            /* Footer height */
+      }
   </style>
 
 </head>
@@ -137,8 +137,9 @@
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Research</a>
         <div class="dropdown-content">
-          <a href="research.html#whatwework">What we work?</a>
-          <a href="research.html#publications">Publications</a>
+          <a href="#ourworks">Our works</a>
+          <a href="#currentworks">Current works</a>
+          <a href="#futureworks">Future works</a>
           <a href="research.html#softwares">Softwares</a>
         </div>
     </li>
@@ -157,7 +158,6 @@
     <li><a href="contact.html">Contact us</a></li>
     </ul>
 
-
     <div class='container2'>
         <img src='image/new_logo.png' class='iconDetails' />
         
@@ -169,9 +169,7 @@
         </div>
     </div>
 
-    <br></br>
-    <br></br>
-    <br></br>
+    <br></br><br></br><br></br>
 
     <div class="row">
         <div class="column" style="background-color: rgb(139, 135, 135);">
@@ -192,18 +190,19 @@
         </div>
         <div class="column">
           <h2 style="color: rgb(139, 135, 135);">Recent Tweets</h2>
-          <a class="twitter-timeline" data-width="40%" data-height="100%" data-theme="light" href="https://twitter.com/bharatiscript?ref_src=twsrc%5Etfw">Tweets by bharatiscript</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-		  <a class="twitter-timeline" data-width="40%" data-height="100%" data-theme="light" href="https://twitter.com/cnslabiitm?ref_src=twsrc%5Etfw">Tweets by cnslabiitm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          <a class="twitter-timeline" style="width:100% height=100%;" data-width="45%" data-height="150%" data-theme="dark" href="https://twitter.com/bharatiscript?ref_src=twsrc%5Etfw">Tweets by bharatiscript</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+		      <a class="twitter-timeline" style="width:100% height=100%;" data-width="45%" data-height="150%" data-theme="dark" href="https://twitter.com/cnslabiitm?ref_src=twsrc%5Etfw">Tweets by cnslabiitm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
         </div>
     </div>
-    <br></br>
-    <br></br>
+
+    <br></br><br></br>
+
     <div class="row">
       <div class="column">
-        <img src="image/new_logo.png"/ width="70%">
+        <img src="image/new_logo.png"/ width="70%" style="margin-left: 10%; margin-right:0%;">
       </div> 
       <div class="column">
-        <div class="text" style="margin-left: 1em; margin-left:0%; margin-right: 10%; text-align: justify;">
+        <div class="text" style="margin-left: 1em; margin-left:10%; margin-right: 5%; text-align: justify;">
     
           <h2><b>About us</b></h2>
           <br></br>
@@ -221,11 +220,529 @@
           <br></br>
           2. Develop tools to improve the learning process for children
           <br></br>
-          Click <a href="research.html">here </a> to know more about our work!
         </div>    
       </div> 
     </div>
+
+    <div class="row-after">
+
+    </div>
+
+    <br></br><br></br>
+    <hr></hr>
+    <br></br><br></br>
+  
+    <h1 style="margin-left: 1%;">Research</h1>
     <br></br>
     
-</body>
+    <a id="ourworks" name="ourworks"><h2 style="margin-left: 1%">Our Works</h2></a>
+
+      <br></br>
+      <div class="container" style="background-color: bisque; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>1. The shape of handwritten characters</h3></center>
+          <br></br>
+          <i>V.S. Chakravarthy & Bhaskar Kompella, “The Shape of Handwritten Character,” Pattern Recognition Letters, Vol. 24, No. 12, August, 2003.
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Developed universal framework based on 'Catastrophe theory' by defining eleven shape features that can derived
+          as the components of any handwriting character belonging to any script
+          <br></br>
+          - More complex structures break down to the proposed eleven shape features
+          <br></br>
+          <center>
+            <img src="image/research/work1/a.png" width="50%">
+            </br>
+            Illustrations of elementary shape points
+          </center>
+          <br></br>
+          - The theory explains several distortion patterns of handwritten characters and the 
+          notion of co-dimension measures the complexity and stability of a script.
+          </br>
+          <center>
+            <img src="image/research/work1/b.png" width="50%">
+          </center>
+          </br>
+          - Developed online handwriting recognition model for English
+          </br>
+          <center>
+            <img src="image/research/work1/c.png" width="50%">
+            </br>
+            Graph representations of handwritten uppercase English alphabets
+          </center>
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+  
+      <div class="container" style="background-color:darkseagreen; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>2. Online Character Recognition of Telugu script based on Support Vector Machines</h3></center>
+          <br></br>
+          <i>Rajkumar.J, Mariraja K., Kanakapriya, K., Nishanthini, S., Chakravarthy, V.S., A system for Online Character Recognition of
+            Telugu script based on Support Vector Machines, International Conference on Frontiers in Handwriting Recognition
+            (ICFHR 2012), Bari, Italy, September 18-20 2012.
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Online Telugu handwriting recognition model by two schemas using Ternary Search Tree and Support Vector Machines respectively
+          <br></br>
+          - In three-tier vertical organization of a typical Telugu character, the stroke set are classified into 4 subclasses primarily
+          based on their vertical position
+          <br></br>
+          <center>
+            <img src="image/research/work2/a.png" width="30%">
+            <img src="image/research/work2/b.png" width="26%" height="80%">
+            </br>
+            Flow chart diagram of different stages in two schemas
+          </center>
+          <br></br>
+          - The two schemas yielded overall stroke recognition performances of 89.59% and 96.69% respectively
+          <br></br>
+          - Character-level recognition performances of two schemas was 90.55% and 96.42% respectively
+          <br></br>
+          <center>
+            <img src="image/research/work2/c.png" width="50%">
+            </br>
+            Ternary Search Tree representation of Telugu Character
+          </center>
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>    
+      
+      <div class="container" style="background-color:lightblue; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>3. Online Handwriting Recognition for Tami</h3></center>
+          <br></br>
+          <i>K.H. Aparna, Vidhya Subramanian, M. Kasirajan, G. Vijay Prakash, V.S. Chakravarthy, Sriganesh Madhvanath,
+            “Online Handwriting Recognition for Tamil,”.
+            Ninth International Workshop on Frontiers in Handwriting Recognition (IWFHR-9 2004), Kokubunji,
+            Tokyo, Japan, October, 2004. 
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Online Tamil handwriting recognition model based on identifying sequence of strokes in the character
+          <br></br>
+          - Structure based representation of a stroke is used in which a stroke is represented as a string of shape
+          features
+          <br></br>
+          <center>
+            <img src="image/research/work3/a.png" width="30%">
+            </br>
+            Flow chart diagram of different stages
+          </center>
+          <br></br>
+          - With the string representation of the stroke, it is identified by comparing it with a database of
+          strokes using a flexible string matching procedure (i.e Character termination, is determined using a finite state automaton)
+          <br></br>
+          <center>
+            <img src="image/research/work3/b.png" width="30%">
+            </br>
+            Transition table of Finite State Machine
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work3/c.png" width="30%">
+          </center>
+          <br></br>
+          - Character recognition using the model was 91.5% accurate
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>    
+
+      <div class="container" style="background-color:lightsalmon; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>4. LEKHAK [MAL]: A System for online recognition of handwritten Malayalam characters</h3></center>
+          <br></br>
+          <i>Gowri Shankar, V. Anoop and V.S. Chakravarthy, “LEKHAK [MAL]: A
+            System for online recognition of handwritten Malayalam characters,”
+            National Conference on Communications, IIT, Madras, January, 2003. 
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Online Malayalam handwritten character recognition based on executing sequence of strokes presented in the character
+          <br></br>
+          - Shape based stroke features are extracted to identify the stroke type uniquely
+          <br></br>
+          <center>
+            <img src="image/research/work4/a.png" width="30%">
+            </br>
+            Schematic representation of the character recognition model
+          </center>
+          <br></br>
+          - With the sequence of string representations of the strokes, the character is identified using string matching algorithm
+          <br></br>
+          <center>
+            <img src="image/research/work4/b.png" width="30%">
+            </br>
+            Representation of Malayalam character 'R' (as in Rishi), as a string of shape features
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work4/c.png" width="30%">
+            <img src="image/research/work4/d.png" width="39%">
+            </br>
+            A sample handwritten Malayalam text and its recognized output in LEKHAK
+          </center>
+          <br></br>
+          - The model can recognize the characters with 93% accuracy
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+    
+      <div class="container" style="background-color:palegreen; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>5. Online Handwritten Character Recognition of
+            Devanagari and Telugu Characters using Support Vector
+            Machines</h3>
+          </center>
+          <br></br>
+          <i>H. Swethalakshmi, A. Jayaraman, V. S. Chakravarthy, C. Chandra Sekhar,
+            'Online Handwritten Character Recognition of Devanagari and Telugu Characters using Support Vector Machines',
+            10th International Workshop on Frontiers in Handwriting Recognition, La Baule, France, October 23-26, 2006.
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Recognition system for online handwriting characters for Indian writing systems
+          <br></br>
+          - A handwritten character is represented as a sequence of strokes whose features are extracted and classified
+          <br></br>
+          <center>
+            <img src="image/research/work5/a.png" width="30%">
+            </br>
+            Identifying rules for writing the character /au/ in Devanagari script
+          </center>
+          <br></br>
+          - Support vector machines have been used for constructing the stroke recognition engine
+          <br></br>
+          <center>
+            <img src="image/research/work5/b.png" width="30%">
+          </center>
+          <br></br>
+          - The model can extended to other Indian languages as well
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+    
+      <div class="container" style="background-color:burlywood; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>6. A complete OCR system development for Tamil Magazine Documents</h3>
+          </center>
+          <br></br>
+          <i>Aparna Kokku, V. Srinivasa Chakravarthy, A complete OCR system development for
+            Tamil Magazine Documents, In OCR for Indic Scripts, Venu Govindaraju and Srirangaraj
+            Setlur (Eds.), Springer, 2009.
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - A complete OCR pipeline model for Tamil magazines/documents with steps including 
+          de-skewing, preprocessing, segmentation, character recognition, and reconstruction
+          <br></br>
+          - Used neural networks for text segmentation and character recognition
+          <br></br>
+          <center>
+            <img src="image/research/work6/a.png" width="50%">
+            </br>
+            Schematic representation of steps involved
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work6/b.png" width="70%">
+            </br>
+            <img src="image/research/work6/c.png" width="50%">
+            </br>
+            Text area segmentation from Tamil magazine page
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work6/d.png" width="60%">
+            </br>
+            Recognition of text
+          </center>
+          <br></br>
+          - Recognition accuracy of 97% reached when using the system
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+
+      <div class="container" style="background-color:cornflowerblue; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>7. An oscillatory neuromotor model of handwriting generation</h3>
+          </center>
+          <br></br>
+          <i>G. Gangadhar, D. Joseph, V.S. Chakravarthy, “An oscillatory neuromotor
+            model of handwriting generation,” International Journal of Document
+            Analysis and Recognition, Vol. 10, No. 2, November 2007.
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Created a handwritten stroke generation with stroke velocities expressed as a
+          Fourier-style decomposition of oscillatory neural activities
+          <br></br>
+          - The neural network consisted of an
+          input or stroke-selection layer, an oscillatory layer, and the
+          output layer where stroke velocities are estimated
+          <br></br>
+          <center>
+            <img src="image/research/work7/a.png" width="50%">
+            </br>
+            Network architecture
+          </center>
+          <br></br>
+          - Special timing network was proposed to set the network’s initial state, which is
+          crucial for accurate stroke generation
+          <br></br>
+          <center>
+            <img src="image/research/work7/b.png" width="50%">
+            </br>
+            Schematic depicting of the dynamics of a single neural oscillator
+            <br></br>
+            <img src="image/research/work7/c.png" width="40%">
+            </br>
+            Post-preparatory delay and its influence on error and stroke generation
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work7/d.png" width="50%">
+            </br>
+            Four and five-letter words produced by the handwriting network
+          </center>
+          <br></br>
+          - Suggested Neuro-biological significance of the process and architecture used and
+          its resemblance with human motor system
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+
+      <div class="container" style="background-color:thistle; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>8. An end-to-end, interactive Deep Learning based Annotation
+            system for cursive and print English handwritten text</h3>
+          </center>
+          <br></br>
+          <i>Pranav Guruprasad, Sujith Kumar S, Vigneswaran C, V. Srinivasa
+            Chakravarthy. "An end-to-end, interactive Deep Learning based Annotation
+            system for cursive and print English handwritten text". ICDSMLA-2020 
+          </i>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - User friendly annotation system for English handwritten system that requires minimal manual intervention
+          <br></br>
+          - Provides flexibility to make changes for correcting detected text boxes, serializing the boxes, and change detected text
+          <br></br>
+          <center>
+            <img src="image/research/work8/a.png" width="60%">
+            </br>
+            Different stages of the pipeline
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work8/b.png" width="30%">
+            </br>
+              Adjusting bounding boxes
+            <br></br>
+            <img src="image/research/work8/c.png" width="50%">
+            </br>
+          </center>
+          <center>
+            <img src="image/research/work8/d.png" width="70%">
+          </center>
+          <br></br>
+          - Recognition model used Convolutional network, multi-dimensional LSTM and Connectionist Temporal Classifier
+          <br></br>
+          - The Character Error rate estimating Edit-distance was equal to 9.3
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+
+      <div class="container" style="background-color:limegreen; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>9. Tamil OCR</h3>
+          </center>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Trained word level recognition model based on Deep Learning
+          <br></br>
+          <center>
+            <img src="image/research/work9/a.png" width="35%">
+            <img src="image/research/work9/b.png" width="45%">
+            </br>
+            Model output for a given sample page from Thirukkural Urai book
+          </center>
+          <br></br>
+          - Model can recognize with the Character Error Rate of 0.1%
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+
+      <div class="container" style="background-color:mediumturquoise; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>10. Telugu OCR</h3>
+          </center>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Word level recognition model based on Deep Learning
+          <br></br>
+          <center>
+            <img src="image/research/work10/a.jpg" width="50%">
+            <img src="image/research/work10/b.png" width="50%">
+            </br>
+            Model output for a given sample input
+          </center>
+          <br></br>
+          - Model can recognize with the Character Error Rate of 0.5%
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+
+      <div class="container" style="background-color:orange; margin-left: 10%; margin-right: 10%;">
+        <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+          <br></br>
+          <center><h3>11. Text paragraph detection and word segmentation</h3>
+          </center>
+          <br></br>
+          <b>Highlights</b>
+          <br></br>
+          - Text paragraph detection and word segmentation from Telugu newspaper/documents
+          <br></br>
+          <center>
+            <img src="image/research/work11/a.png" width="30%">
+            </br>
+            Text paragraph detection in Telugu daily
+          </center>
+          <br></br>
+          <center>
+            <img src="image/research/work11/b.jpeg" width="30%">
+            </br>
+            Word level segmentation
+          </center>
+          <br></br>
+        </div>
+      </div>
+      <hr></hr>
+
+    <br></br>
+    <a id="currentworks" name="currentworks"><h2 style="margin-left: 1%">Current Works</h2></a>
+    <br></br>
+
+    <div class="container" style="background-color:salmon; margin-left: 10%; margin-right: 10%;">
+      <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+        <br></br>
+        <center><h3>1. Telugu handwriting recognition</h3>
+        </center>
+        </br>
+        - Annotate and augment Telugu handwriting data
+        </br>
+        <center>
+          <img src="image/research/cwork1/a.jpeg" width="30%">
+          <img src="image/research/cwork1/b.png" width="30%">
+        </center>
+        </br>
+        - Train recognition model on top of Telugu OCR model
+        <br></br>
+      </div>
+    </div>
+    <hr></hr>
+
+    <div class="container" style="background-color:yellowgreen; margin-left: 10%; margin-right: 10%;">
+      <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+        <br></br>
+        <center><h3>2. Tamil handwriting recognition</h3>
+        </center>
+        </br>
+        - Annotate and augment Tamil handwriting data
+        </br>
+        <center>
+          <img src="image/research/cwork2/a.png" width="30%">
+          <img src="image/research/cwork2/b.png" width="40%">
+        </center>
+        <br></br>
+        - Train recognition model on top of Tamil OCR model
+        <br></br>
+      </div>
+    </div>
+    <hr></hr>
+
+    <div class="container" style="background-color:wheat; margin-left: 10%; margin-right: 10%;">
+      <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+        <br></br>
+        <center><h3>3. Handwriting generation model</h3>
+        </center>
+        </br>
+        - Create handwriting generation model using Oscillators and flip flop network
+        <br></br>
+        <center>
+          <img src="image/research/cwork3/a.png" width="60%">
+        </center>
+        <br></br>
+      </div>
+    </div>
+    <hr></hr>
+
+    <div class="container" style="background-color:skyblue; margin-left: 10%; margin-right: 10%;">
+      <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+        <br></br>
+        <center><h3>4. Form processing</h3>
+        </center>
+        <br></br>
+        - Use attentional search mechanism to locate the key fields in the form without context
+        <br></br>
+        <center>
+          <img src="image/research/cwork4/a.png" width="40%">
+        </center>
+        <br></br>
+      </div>
+    </div>
+    <hr></hr>
+
+    <br></br>
+    <a id="futureworks" name="futureworks"><h2 style="margin-left: 1%">Future Works</h2></a>
+    
+    <div class="container" style="background-color:springgreen; margin-left: 10%; margin-right: 10%;">
+      <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
+        <br></br>
+        <center><h3>1. Understanding Dyslexia by handwriting</h3>
+        </center>
+        <br></br>
+        - Model to recognize dyslexia based on child's handwriting
+        <br></br>
+        <center>
+          <img src="image/research/fwork1/a.png" width="40%">
+        </center>
+        <br></br>
+      </div>
+    </div>
+    <hr></hr>
+
+  </body>
 </html>
