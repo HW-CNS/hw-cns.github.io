@@ -144,7 +144,6 @@
         padding: 0 18px;
         display: none;
         overflow: hidden;
-        background-color: #f1f1f1;
       }
   </style>
 
@@ -303,7 +302,6 @@
         </div>
       </div>
       <hr></hr>
-
 
       <div class="container" style="background-color:darkseagreen; margin-left: 10%; margin-right: 10%;">
         <div class='container' style="margin-left: 10%; margin-right: 10%; text-align: center;  text-align: justify;"">
@@ -781,6 +779,23 @@
     our <a href="https://github.com/rw-team/rw-team.github.io/">GitHub repository</a> and create a
     pull request or add your feature request in our issue tracker
     <br></br>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 
   </body>
 </html>
