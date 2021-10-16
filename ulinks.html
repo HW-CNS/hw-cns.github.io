@@ -8,20 +8,20 @@
             * {
             box-sizing: border-box;
             }
-            
+
             .column {
             float: left;
             width: 33.33%;
             padding: 5px;
             }
-            
+
             /* Clearfix (clear floats) */
             .row::after {
             content: "";
             clear: both;
             display: table;
             }
-            
+
             ul {
             list-style-type: none;
             margin: 0;
@@ -35,7 +35,7 @@
             li {
             float: left;
             }
-            
+
             li a, .dropbtn {
             display: inline-block;
             color: white;
@@ -43,15 +43,15 @@
             padding: 14px 16px;
             text-decoration: none;
             }
-            
+
             li a:hover, .dropdown:hover .dropbtn {
             background-color: rgb(206, 41, 29);
             }
-            
+
             li.dropdown {
             display: inline-block;
             }
-            
+
             .dropdown-content {
             display: none;
             position: absolute;
@@ -60,7 +60,7 @@
             box-shadow: 0px 8px 16px 0px rgb(230, 223, 223);
             z-index: 1;
             }
-            
+
             .dropdown-content a {
             color: white;
             padding: 12px 16px;
@@ -68,9 +68,9 @@
             display: block;
             text-align: left;
             }
-            
+
             .dropdown-content a:hover {background-color: rgb(206, 41, 29);}
-            
+
             .dropdown:hover .dropdown-content {
             display: block;
             }
@@ -108,7 +108,7 @@
         </style>
     </head>
 
-    <body style="background-color:thistle; margin: 1em;">
+    <body style="background-color:white; margin: 1em;">
         <img src="image/ulinks_cover.jpg" alt="alt text" width="100%" height="270px" />
         <ul>
             <li><a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/home.html">CNS Home</a></li>
@@ -123,54 +123,31 @@
                 </div>
             </li>
             <li><a href="people.html">People</a></li>
-            <li class="dropdown">
-                <a class="active" href="javascript:void(0)" class="dropbtn">Useful links</a>
-                <div class="dropdown-content">
-                <a href="#bharati">Bharati Script</a>
-                <a href="#blogs">Blogs</a>
-                <a href="#neuroscience">Neuroscience</a>
-                <a href="#programming">Programming</a>
-                <a href="#presentations">Handwriting & OCR</a>  
-                </div>
-            </li>
+            <li><a href="ulinks.html">Resources</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact.html">Contact us</a></li>
             </ul>
 
             <br></br>
-            <h1>Useful resources</h1>
+            <center><h1>Computational Neuroscience - Useful Resources</h1></center>
             <br></br>
-            <a id="bharati" name="bharati"><h2>Bharti Script - a common script for India</h2></a>
+            <hr></hr>
             </br>
-            <a href="bharatiscript.com">Website</a>
+            <a id="neuroscience" name="neuroscience"><h2>Materials</h2></a>
             </br>
-            <a href="https://bharatiscript.wordpress.com/">Wordpress blog</a>
-            </br>
-            <a href="https://twitter.com/bharatiscript">Follow on Twitter</a>
-            <br></br>
-
-            <!------------>
-
-            <a id="blogs" name="blogs"><h2>Blogs</h2></a>
-            </br>
-            <a href="https://neurotale.blogspot.com/">NeuroTales</a>
-            </br>
-            <a href="https://riseleadserve.github.io/">Rise*Lead*Serve</a>
-            <br></br>
-
-            <!------------>
-
-            <a id="neuroscience" name="neuroscience"><h2>Neuroscience</h2></a>
-            </br>
-            <b>Prof. Srinivasa Chakravarthy's NPTEL courses</b>
+            <b>Prof. Srinivasa Chakravarthy's courses</b>
             </br>
             <a href="https://nptel.ac.in/courses/102/106/102106023/">Introduction to Computational Neuroscience</a>
+            </br>
+            <a href="https://www.youtube.com/playlist?list=PLqFGS_otF-c47OamOxXEu8ZmlY-NXZnMy">BT6270 - Computational Neuroscience lectures playlist</a>
             <br></br>
-            <b>Prof. Srinivasa Chakravarthy's Books</b>
+            <b>Prof. Srinivasa Chakravarthy's books</b>
             </br>
             <a href="https://www.springer.com/gp/book/9789811333194">Demystifying The Brain</a>
+            </br>
+            <a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/bgmodel_book.html">Computational Neuroscience models of the Basal Ganglia </a>
             <br></br>
-            <a href="https://www.springer.com/in/book/9789811084935">Computational Neuroscience Models of the Basal Ganglia</a>
+            <b>Other popular resources</b>
             </br>
             <a href="http://www.gatsby.ucl.ac.uk/~lmate/biblio/dayanabbott.pdf">Theoretical Neuroscience (Dayan and Abbott)</a>
             </br>
@@ -179,13 +156,23 @@
             <a href="https://www.izhikevich.org/publications/dsn/index.htm">Eugene M. Izhikevich:
             Dynamical Systems in Neuroscience:
             The Geometry of Excitability and Bursting </a>
-            <br></br>
-            
-            <!------------>
-            
-            <a id="programming" name="programming"><h2>Programming</h2></a>
             </br>
-            <a href="https://pythonprogramming.net/">Python programming tutorials</a>
+            <a href="https://gui.dandiarchive.org/#/">The Dandi Archive</a>
+            </br>
+            <a href="https://portal.brain-map.org/">Allen Brian Atlas</a>
+            </br>
+            <a href="https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering">
+              Nonlinear Dynamics and Chaos - Steven Strogatz</a>
+            </br>
+            <a href="https://neural-reckoning.org/comp-neuro-resources.html">Resources by Neural Reckoning group</a>
+            </br>
+            <a href="https://github.com/asoplata/open-computational-neuroscience-resources">Open Comp Neuro resources</a>
+            </br>
+            <br></br>
+            <hr></hr>
+            <!------------>
+            </br>
+            <a id="programming" name="programming"><h2>Amazing libraries (Python & Matlab)</h2></a>
             </br>
             <a href="https://realpython.com/numpy-tutorial/">NumPy tutorials</a>
             </br>
@@ -194,10 +181,39 @@
             <a href="https://pytorch.org/tutorials/">PyTorch tutorials</a>
             </br>
             <a href="https://www.tensorflow.org/tutorials">Tensorflow tutorials</a>
+            </br>
+            <a href="https://bdtoolbox.org/">Brain Dynamics Toolbox </a>
+            </br>
+            <a href="https://www.nwb.org/">Neurodata Without Borders</a>
+            </br>
+            <a href="https://aeb019.hosted.uark.edu/pplane.html">Phase plane plotter</a>
+            </br>
+            <a href="https://neuron.yale.edu/neuron/">Neuron simulator</a>
+            </br>
+            <a href="https://senselab.med.yale.edu/ModelDB/">ModelDB</a>
+            </br>
+            <a href="https://neuroml.org/">NeuroML - markup language for models</a>
+            </br>
+            <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure</a>
+            </br>
+            <a href="https://github.com/fieldtrip/fieldtrip">FieldTrip - toolbox for MEG and EEG analysis</a>
+            </br>
+            <a href="https://genn-team.github.io/genn/">GeNN - GPU enhanced Neuronal Network simulation environment</a>
+            </br>
+            <a href="https://github.com/emeyers/Brain-Observatory-Toolbox">Brian Observatory toolbox</a>
+            </br>
+            <a href="https://lfpy.readthedocs.io/en/latest/">Local Field Potentials in Python</a>
+            </br>
+            <a href="https://github.com/DynaSim/DynaSim/wiki">DynaSim toolbox</a>
+            </br>
+            <a href="https://github.com/BindsNET/bindsnet">BindsNET - package for simulating spiking neural networks (SNNs) using PyTorch</a>
+            </br>
             <br></br>
-            <!------------>
+            <hr></hr>
 
-            <a id="presentations" name="presentations"><h2>Handwriting & OCR</h2></a>
+            <!------------>
+            </br>
+            <center><h1>Handwriting & OCR - Useful Resources</h1></center>
             </br>
             <a href="https://towardsdatascience.com/build-a-handwritten-text-recognition-system-using-tensorflow-2326a3487cd5">Build a Handwritten Text
                                                                     Recognition System using TensorFlow</a>
@@ -207,10 +223,10 @@
             </br>
             <a href="https://www.pyimagesearch.com/2020/08/24/ocr-handwriting-recognition-with-opencv-keras-and-tensorflow/">
                 OCR - Handwriting recognition with OpenCV, Keras and Tensorflow</a>
-            
+
             </br>
             <a href="https://towardsdatascience.com/intuitively-understanding-connectionist-temporal-classification-3797e43a86c">
-            Understanding CTC 
+            Understanding CTC
             </a>
 
             </br>
@@ -219,18 +235,43 @@
             </br>
             <a href="https://paperswithcode.com/task/optical-character-recognition">
             Paperswithcode on OCR</a>
-            
+
             </br>
             <a href="https://arxiv.org/abs/1704.03155">EAST Test detector</a>
 
             </br>
             <a href="https://github.com/clovaai/CRAFT-pytorch">CRAFT-PyTorch Test detector project</a>
             <br></br>
-
+            <hr></hr>
             <!------------>
+            </br>
+            <center><h1>Other Useful Resources</h1></center>
+            <a id="bharati" name="bharati"><h2>Bharti Script - a common script for India</h2></a>
+            </br>
+            <a href="bharatiscript.com">Website</a>
+            </br>
+            <a href="https://bharatiscript.wordpress.com/">Wordpress blog</a>
+            </br>
+            <a href="https://twitter.com/bharatiscript">Follow on Twitter</a>
+            <br></br>
+            <hr></hr>
+            <!------------>
+
+            <a id="blogs" name="blogs"><h2>Blogs</h2></a>
+            </br>
+            <a href="https://neurotale.blogspot.com/">NeuroTales</a>
+            </br>
+            <a href="https://riseleadserve.github.io/">Rise*Lead*Serve</a>
+            <br>
+            <a href="https://purplesunsindia.blogspot.com/">Purple Suns</a>
+            </br>
+            <a href="http://scienceintelugu.blogspot.com/">Science Telugu</a>
+            <br></br>
+            <!------------>
+            <hr></hr>
         <br></br>
         <br></br>
-    
+
         <div id="footer" style="background-color: rgb(139, 135, 135);">
         <center>
             Made with <img src="image/love.png" width="15px" height="15px" alt="love"> by R&W team @ CNS lab
