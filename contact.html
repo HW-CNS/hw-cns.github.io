@@ -151,32 +151,31 @@
             Ph: <a href="tel:(+91)-44-22575125">(+91)-44-22575125</a><br>
             Team mail: <a href="mailto:handwritingteam@gmail.com">handwritingteam[AT]gmail[DOT]com</a> <br><br><br>
             <style>
-                #map {
+                #mapdiv {
                 height: 400px;
                 width: 100%;
                 }
             </style>
 
-            <div id="googleMap" ></div>
-            <div id="map"></div>
-
+            <div id="mapdiv"></div>
+            <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
             <script>
-            function initMap() {
-                var test= {lat: 12.989373, lng: 80.227624};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 20,
-                center: test
-                });
-                var marker = new google.maps.Marker({
-                position: test,
-                map: map
-                });
-            }
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-            </script>
+              map = new OpenLayers.Map("mapdiv");
+              map.addLayer(new OpenLayers.Layer.OSM());
 
+              var lonLat = new OpenLayers.LonLat(80.227575, 12.989239)
+                    .transform(
+                      new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                      map.getProjectionObject() // to Spherical Mercator Projection
+                    );
+              var zoom=16;
+              var markers = new OpenLayers.Layer.Markers( "Markers" );
+              map.addLayer(markers);
+
+              markers.addMarker(new OpenLayers.Marker(lonLat));
+
+              map.setCenter (lonLat, zoom);
+            </script>
         <br></br>
         <br></br>
 

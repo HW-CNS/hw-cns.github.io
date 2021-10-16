@@ -1,32 +1,23 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<style> 
-	#map { 
-		height: 400px; 
-		width: 100%; 
-	} 
-	</style> 
-</head> 
-<body> 
-	<p>My Google Maps Demo</p> 
-	<div id="map"></div> 
-	<script> 
-	function initMap() {
-		var test= {lat: 12.989373, lng: 80.227624}; 
-		var map = new google.maps.Map(document.getElementById('map'), { 
-		zoom: 20, 
-		center: test 
-		}); 
-		var marker = new google.maps.Marker({ 
-		position: test, 
-		map: map 
-		}); 
-	} 
-	</script> 
-	<script async defer 
-	src= 
-"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> 
-	</script> 
-</body> 
-</html> 
+<html><body>
+  <div id="mapdiv"></div>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script>
+    map = new OpenLayers.Map("mapdiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+
+    var lonLat = new OpenLayers.LonLat(80.227575, 12.989239)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+
+    var zoom=16;
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+
+    map.setCenter (lonLat, zoom);
+  </script>
+</body></html>
